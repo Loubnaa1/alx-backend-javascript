@@ -3,7 +3,7 @@ export default function taskBlock(trueOrFalse) {
   const task2 = true;
 
   if (trueOrFalse) {
-    task = true; // Reassigning the outer scope variables
+    task = true;
     task2 = false;
   }
 
