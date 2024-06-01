@@ -1,2 +1,36 @@
-VimCrypt~03!³¸7ú7,ìÎ›/…şkºß'ÁĞy©™+’üeÈ¿4.Ÿ˜…†pˆÄafçé}èŒ¿µ£ªï~ì¦¾é–V{e³”!54UÒ;å!ıic<"Öã+S9o"OvSóVg¯JÒF‰5ş19¤T0gÅg˜ÏPäØ'R.’† ŞúşÉ²¥¹d^X‰ŠgÙÏT¢k¨f³’ÁUyÕzÊJ9|eÂ<ÈWÙ€Uş,ZI¢ÕÀë‡CÖ£õLït±ØÊ,ù‹.<d‘ÖÂ·ÛS'¯
-x3‘¦k½xÍA;9§{Òrwíœ³Ç®¼«2èÎğÎBtÍÎRËUDÈç½_f£ª5s°E5*Œ©Á7¥¤“T­”ğ‚h4Ñ=@äŒQ]ÊÏåÜ¢Ø{|ä›Ï$ö£	Ò?ú#ñË‘¤Z®Ñ6%“ÿ–j+Ú¹}i+i»õh§±ğ2”jwh>¼}Ü¾(3¡G/Û>!31Îu¹?ø„†®‘m‰íY4cè"uš½&OÃTíhSz«ñ3Û£:ù©NS­5,J0MˆV‡˜;4·À«PÛQ-­™Â¦¯R,úq.Gµ¢k&›Cá;QR’mVŞ8Ë"[Èo]D=$+ÍÈñRõBùn(Ìşqlmgìsäÿ$åPfpk{Zğe0d²é&KmªÿaâC8³]ƒ©^®¦SÍq|t+``’Î`íùwÇWq\« êM„øfç¿Ğ¯ğKì7ş=›îÌØ[û†ƒ€ˆ
+module.exports = {
+    env: {
+      browser: false,
+      es6: true,
+      jest: true,
+    },
+    extends: [
+      'airbnb-base',
+      'plugin:jest/all',
+    ],
+    globals: {
+      Atomics: 'readonly',
+      SharedArrayBuffer: 'readonly',
+    },
+    parserOptions: {
+      ecmaVersion: 2018,
+      sourceType: 'module',
+    },
+    plugins: ['jest'],
+    rules: {
+      'no-console': 'off',
+      'no-shadow': 'off',
+      'no-restricted-syntax': [
+        'error',
+        'LabeledStatement',
+        'WithStatement',
+      ],
+    },
+    overrides:[
+      {
+        files: ['*.js'],
+        excludedFiles: 'babel.config.js',
+      }
+    ]
+  };
+  
