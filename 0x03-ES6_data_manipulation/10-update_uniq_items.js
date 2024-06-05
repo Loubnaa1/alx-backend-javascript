@@ -7,5 +7,4 @@ export default function updateUniqueItems(itemMap) {
     if (quantity === 1) {
       itemMap.set(item, 100);
     }
-  }
-}
+  }}
