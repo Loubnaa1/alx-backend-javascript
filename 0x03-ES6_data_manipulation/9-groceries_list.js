@@ -6,4 +6,4 @@ export default function groceriesList() {
     NMap.set('Rice', 1);
     NMap.set('Banana', 5);
     return NMap;
-  }
+}
